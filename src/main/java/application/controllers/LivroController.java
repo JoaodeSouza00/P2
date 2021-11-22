@@ -1,20 +1,20 @@
-package application.controllers;
-import java.util.Optional;
+package application.controllers;//importanto o pacote application na pasta controllers
+import java.util.Optional;//importando a biblioteca Optional
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.beans.factory.annotation.Autowired;//importando a biblioteca Autowired
+import org.springframework.stereotype.Controller;//importando a biblioteca Controller
+import org.springframework.web.bind.annotation.PathVariable;//importando a biblioteca PathVariable
+import org.springframework.web.bind.annotation.RequestMapping;//importando a biblioteca RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod;//importando a biblioteca RequestMethod
+import org.springframework.web.bind.annotation.RequestParam;//importando a biblioteca RequestParam
 
-import application.models.Livro;
-import application.repositories.LivroRepository;
-import org.springframework.ui.Model;
+import application.models.Livro;//importando a biblioteca Livro
+import application.repositories.LivroRepository;//importando a biblioteca LivroRepository
+import org.springframework.ui.Model;//importando a biblioteca Model
 
 @Controller
 @RequestMapping("/livro")
-public class LivroController {
+public class LivroController {//criando a classe publica LivroController
     @Autowired
     private LivroRepository livrosRepo;
     @RequestMapping("/list")

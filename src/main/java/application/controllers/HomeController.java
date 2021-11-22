@@ -1,4 +1,4 @@
-package application.controllers; //importanto o arquivo application na pasta controllers
+package application.controllers; //importanto o pacote application na pasta controllers
 
 import org.springframework.stereotype.Controller;// importando a classe Controller
 import org.springframework.web.bind.annotation.RequestMapping;// importando a classe RequestMapping
