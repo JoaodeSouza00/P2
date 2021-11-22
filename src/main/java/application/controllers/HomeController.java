@@ -1,13 +1,13 @@
-package application.controllers;
+package application.controllers; //importanto o arquivo application na pasta controllers
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.stereotype.Controller;// importando a classe Controller
+import org.springframework.web.bind.annotation.RequestMapping;// importando a classe RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod;// importando a classe RequestMethod
 
 @Controller
-public class HomeController {
+public class HomeController { //criando a classe publica HomeController
     @RequestMapping(method=RequestMethod.GET)
-    public String index() {
-        return "home/index.jsp";
+    public String index() { //criando um metodo publico index
+        return "home/index.jsp";//o metodo retrna a pasta home/index.jsp 
     }
 }
