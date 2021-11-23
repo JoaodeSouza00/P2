@@ -2,46 +2,50 @@
 
 
 
-<!DOCTYPE html>
+<!DOCTYPE html><!--informando ao navegador que ele ira "ler um documento hmtl-->
 
-<html>
+<html><!--iniciando a estrutura do navegador-->
 
-    <head>
-
-        <meta charset="utf-8" />
+    <head><!--iniciando a estrutura do cabeçario-->
 
 
+        <meta charset="utf-8" /><!--Especificando a codificação de caracteres para o documento -->
 
-        <title>Apagar Livro</title>
+
+
+
+        <title>Apagar Livro</title><!--definindo o titudo da pagina -->
+
 
      
 
-    </head>
+    </head><!--finalizando a estrutura do cabeçario-->
 
-    <body>
-
-        <h1>Apagar Livro</h1>
-
-        <hr>
+    <body><!--iniciando a estrutura do corpo-->
 
 
+        <h1>Apagar Livro</h1><!--definindo um titulo da pagina-->
 
-        <p>Deseja mesmo excluir o livro<em>"${livro.titulo}"</em>?</p>
+        <hr><!--inserindo uma quebra de linha-->
 
 
 
-        <form action="livro/delete" method="post">
-
-            <input type="hidden" name="id"value="${livro.id}"/>
+        <p>Deseja mesmo excluir o livro<em>"${livro.titulo}"</em>?</p><!--inserindo um paragrafo na pagina-->
 
 
 
-            <a href="/livro/list">Voltar</a>
+        <form action="livro/delete" method="post"><!--enviando dados para  livro/delete-->
 
-            <input type="submit" value="Excluir"/>
+            <input type="hidden" name="id"value="${livro.id}"/><!--criando um input id -->
+
+
+
+            <a href="/livro/list">Voltar</a><!--criando um link para /livro/list -->
+
+            <input type="submit" value="Excluir"/><!--criando um input para deletar -->
 
         </form>
 
-        </body>
+        </body><!--finalizando a estrutura do corpo-->
 
-</html>
+</html><!--finalizando a estrutura do navegador-->
