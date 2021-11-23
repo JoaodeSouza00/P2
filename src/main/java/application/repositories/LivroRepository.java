@@ -3,7 +3,7 @@ import org.springframework.data.repository.CrudRepository;// importando a classe
 
 import application.models.Livro;// importando a classe Livro
 
-public interface LivroRepository extends CrudRepository<Livro, Integer> {
+public interface LivroRepository extends CrudRepository<Livro, Integer> {//criando a interface LivroRepository que esta herdando os atrubutos deCrudRepository
 
     
 
