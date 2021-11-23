@@ -15,9 +15,9 @@ import org.springframework.ui.Model;//importando a biblioteca Model
 @Controller
 @RequestMapping("/livro")
 public class LivroController {//criando a classe publica LivroController
-    @Autowired
+    @Autowired//subescrevendo o metodo 
     private LivroRepository livrosRepo;
-    @RequestMapping("/list")
+    @RequestMapping("/list")//fazendo o mapeamneto do list
     public String list(Model model){
         model.addAttribute("livros", livrosRepo.findAll());
         return "list.jsp";
@@ -27,12 +27,12 @@ public class LivroController {//criando a classe publica LivroController
         return "livro/list.jsp";
     }
 
-@RequestMapping("/insert")
+@RequestMapping("/insert")//fazendo o mapeamneto do insert
 public String formInsert(){
     return "insert.jsp";
 
 }
-@RequestMapping(value="/insert",method=RequestMethod.POST)
+@RequestMapping(value="/insert",method=RequestMethod.POST)//fazendo o mapeamneto do insert
 public String saveInsert(@RequestParam("titulo")String titulo){
 
     Livro livro=new Livro();
@@ -41,7 +41,7 @@ public String saveInsert(@RequestParam("titulo")String titulo){
     return "redirect:/livro/list";
 
 }
-@RequestMapping("/delete/{id}")
+@RequestMapping("/delete/{id}")//fazendo o mapeamneto do delete
 public String formDelete(Model model,@PathVariable int id){
     Optional<Livro>livro=livrosRepo.findById(id);
     if (!livro.isPresent()) 
