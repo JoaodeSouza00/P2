@@ -1,4 +1,4 @@
-image: gitpod/workspace-mysql
+image: gitpod/workspace-mysql #baixando mysql
 
-tasks:
-  - init: mysql -u root -e "CREATE DATABASE applicationdb"
+tasks: #executando o mysql automaticamente 
+  - init: mysql -u root -e "CREATE DATABASE applicationdb" #inicializando o mysql de forma automatica 
