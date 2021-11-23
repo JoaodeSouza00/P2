@@ -14,7 +14,7 @@
            <hr><!--inserindo uma linha horizontal-->
 
            <form action="insert" method="post"><!--criando formulario de ação post e enviando dados para  insert-->
-               <label for="titulo">titulo</label>
+               <label for="titulo">titulo</label><!--crianado um rotulo para titulo -->
                <input type="text" name="titulo"/><!--criando um input para adicionar um texto -->
                <a href="/livro/list" class="btn btn-secondary">Voltar</a><!--criando um link para /livro/list -->
                <input type="submit" value="Salvar" class="btn btn-warning"/><!--criando um input para salvar -->
