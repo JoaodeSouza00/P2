@@ -9,18 +9,19 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--dizendo que a estilização em css sera feita pelo bootstrap -->
 
     </head><!--finalizando a estrutura do cabeçario-->
-    <body>
-       <h1>Novo Livro</h1>
-           <hr>
-           <form action="insert" method="post">
+    <body><!--iniciando a estrutura do corpo-->
+       <h1>Novo Livro</h1><!--definindo um titulo da pagina-->
+           <hr><!--inserindo uma linha horizontal-->
+
+           <form action="insert" method="post"><!--criando formulario de ação post e enviando dados para  insert-->
                <label for="titulo">titulo</label>
-               <input type="text" name="titulo"/>
-               <a href="/livro/list" class="btn btn-secondary">Voltar</a>
-               <input type="submit" value="Salvar" class="btn btn-warning"/>
-           </form>
+               <input type="text" name="titulo"/><!--criando um input para adicionar um texto -->
+               <a href="/livro/list" class="btn btn-secondary">Voltar</a><!--criando um link para /livro/list -->
+               <input type="submit" value="Salvar" class="btn btn-warning"/><!--criando um input para salvar -->
+           </form><!--fechando a tag formulario-->
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script><!--fazendo uma chamada ao javaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script><!--fazendo uma chamada ao bootstrap -->
 
-    </body>
-</html>
+    </body><!--finalizando a estrutura do corpo-->
+</html><!--finalizando a estrutura do navegador-->

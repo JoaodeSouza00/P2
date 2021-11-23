@@ -26,7 +26,7 @@
 
         <h1>Apagar Livro</h1><!--definindo um titulo da pagina-->
 
-        <hr><!--inserindo uma quebra de linha-->
+        <hr><!--inserindo uma linha horizontal-->
 
 
 
