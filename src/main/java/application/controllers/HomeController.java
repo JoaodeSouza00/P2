@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;// importando a cla
 
 @Controller
 public class HomeController { //criando a classe publica HomeController
-    @RequestMapping(method=RequestMethod.GET)
+    @RequestMapping(method=RequestMethod.GET)//mapeamento para o metodo get
     public String index() { //criando um metodo publico index
         return "home/index.jsp";//o metodo retrna a pasta home/index.jsp 
     }
