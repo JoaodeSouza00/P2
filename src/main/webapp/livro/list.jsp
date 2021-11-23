@@ -1,22 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Livros</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %><!--informando ao navegador que ele vai ler uma uma pagina java contendo um text/html e vai receber caracteres especiais do tipo UTF-8-->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><!--chamando a biblioteca core do jsp-->
+<!DOCTYPE html><!--informando ao navegador que ele ira "ler um documento hmtl-->
+<html><!--iniciando a estrutura do navegador-->
+    <head><!--iniciando a estrutura do cabeçario-->
+        <meta charset="utf-8" /><!--Especificando a codificação de caracteres para o documento -->
+        <title>Livros</title><!--definindo o titudo da pagina -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--dizendo que a estilização em css sera feita pelo bootstrap -->
 
-    </head>
-    <body>
-        <main class="container">
-            <h1>Livros</h1>
-            <a href="/livro/insert" class="btn btn-primary">Novo livro</a>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>Título</th>
-            </tr>
+    </head><!--finalizando a estrutura do cabeçario-->
+    <body><!--iniciando a estrutura do corpo-->
+        <main class="container"><!--tag do corpo principal da pagina-->
+            <h1>Livros</h1><!--definindo um titulo da pagina-->
+            <a href="/livro/insert" class="btn btn-primary">Novo livro</a><!--criando um link para /livro/insert -->
+        <table><!--criando uma tabela-->
+            <tr><!--criando uma linha na tabela-->
+                <th>ID</th><!--criando uma cedula do tipo headers na linha da tabela-->
+                <th>Título</th><!--criando uma cedula do tipo headers na linha da tabela-->
+            </tr><!--criando uma linha na tabela-->
             <c:forEach var="l" items="${livros}">
                 <tr>
                     <td>${l.id}</td>
