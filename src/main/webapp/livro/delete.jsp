@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %><!--informando ao navegador que ele vai ler uma uma pagina java contendo um text/html e vai receber caracteres especiais do tipo UTF-8-->
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-        <form action="livro/delete" method="post"><!--enviando dados para  livro/delete-->
+        <form action="livro/delete" method="post"><!--criando formulario de ação post e enviando dados para  livro/delete-->
 
             <input type="hidden" name="id"value="${livro.id}"/><!--criando um input id -->
 
@@ -44,7 +44,7 @@
 
             <input type="submit" value="Excluir"/><!--criando um input para deletar -->
 
-        </form>
+        </form><!--fechando a tag formulario-->
 
         </body><!--finalizando a estrutura do corpo-->
 

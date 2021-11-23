@@ -1,13 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %><!--informando ao navegador que ele vai ler uma uma pagina java contendo um text/html e vai receber caracteres especiais do tipo UTF-8-->
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Novo Livro</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!DOCTYPE html><!--informando ao navegador que ele ira "ler um documento hmtl-->
 
-    </head>
+<html><!--iniciando a estrutura do navegador-->
+    <head><!--iniciando a estrutura do cabeçario-->
+        <meta charset="utf-8" /><!--Especificando a codificação de caracteres para o documento -->
+        <title>Novo Livro</title><!--definindo o titudo da pagina -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--dizendo que a estilização em css sera feita pelo bootstrap -->
+
+    </head><!--finalizando a estrutura do cabeçario-->
     <body>
        <h1>Novo Livro</h1>
            <hr>
